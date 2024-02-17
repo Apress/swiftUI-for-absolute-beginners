@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Thumbnail: View {
+    
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             Image("cheesecake")
@@ -30,8 +31,6 @@ struct Thumbnail: View {
     }
 }
 
-struct Cheesecake_Previews: PreviewProvider {
-    static var previews: some View {
-        Thumbnail()
-    }
+#Preview {
+    Thumbnail()
 }

@@ -9,25 +9,22 @@
 import SwiftUI
 
 struct Jiggle: View {
+    
         @State private var jiggle = false
         
         var body: some View {
             Text("Hello World!")
                 .scaleEffect(jiggle ? 1.0 : 0.3)
                 .animation(
-                    Animation.spring()
-                    .repeatForever(
-                        autoreverses: true
-                    )
-            )
-                .onAppear(){
+                    .spring()
+                    .repeatForever(autoreverses: true),
+                    value: jiggle)
+            .   onAppear(){
                     self.jiggle.toggle()
             }
         }
     }
 
-struct Jiggle_Previews: PreviewProvider {
-    static var previews: some View {
-        Jiggle()
-    }
+#Preview {
+    Jiggle()
 }

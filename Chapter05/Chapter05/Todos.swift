@@ -19,6 +19,7 @@ let todos = [
 ]
 
 struct Todos: View {
+    
     @State private var selected: Bool = false
     var title: String = "untitled"
     
@@ -34,10 +35,11 @@ struct Todos: View {
 }
 
 struct TodoView: View {
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach(0..<todos.count) { index in
+                ForEach(0..<todos.count, id: \.self) { index in
                     Todos(title: todos[index])
                 }
             }
@@ -45,8 +47,6 @@ struct TodoView: View {
     }
 }
 
-struct TodoView_Previews: PreviewProvider {
-    static var previews: some View {
-        TodoView()
-    }
+#Preview {
+    TodoView()
 }

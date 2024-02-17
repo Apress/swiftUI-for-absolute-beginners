@@ -9,15 +9,16 @@
 import SwiftUI
 
 struct MagnifyView: View {
-    @State private var scale:CGFloat = 1.0
+    
+    @State private var scale: CGFloat = 1.0
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
             .font(.largeTitle)
             .scaleEffect(scale)
             .foregroundColor(Color.black.opacity(0.4))
-            .animation(
-                .spring())
+            .animation(.spring(), value: scale)
             .gesture(
                 MagnificationGesture(minimumScaleDelta: 0.3)
                 .onChanged { self.scale = $0 }
@@ -27,8 +28,6 @@ struct MagnifyView: View {
     }
 }
 
-struct MagnifyView_Previews: PreviewProvider {
-    static var previews: some View {
-        MagnifyView()
-    }
+#Preview {
+    MagnifyView()
 }

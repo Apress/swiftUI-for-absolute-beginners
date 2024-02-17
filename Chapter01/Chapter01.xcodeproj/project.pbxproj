@@ -3,26 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0375DA23A8E15F000C3B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0375D923A8E15F000C3B5F /* AppDelegate.swift */; };
-		DA0375DC23A8E15F000C3B5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0375DB23A8E15F000C3B5F /* SceneDelegate.swift */; };
+		890F40DC2B800980000ACE3E /* Chapter01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F40DB2B800980000ACE3E /* Chapter01App.swift */; };
 		DA0375DE23A8E15F000C3B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0375DD23A8E15F000C3B5F /* ContentView.swift */; };
 		DA0375E023A8E162000C3B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0375DF23A8E162000C3B5F /* Assets.xcassets */; };
 		DA0375E323A8E162000C3B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0375E223A8E162000C3B5F /* Preview Assets.xcassets */; };
-		DA0375E623A8E162000C3B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0375E423A8E162000C3B5F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890F40DB2B800980000ACE3E /* Chapter01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter01App.swift; sourceTree = "<group>"; };
 		DA0375D623A8E15F000C3B5F /* Chapter01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter01.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA0375D923A8E15F000C3B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA0375DB23A8E15F000C3B5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA0375DD23A8E15F000C3B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA0375DF23A8E162000C3B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0375E223A8E162000C3B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA0375E523A8E162000C3B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0375E723A8E162000C3B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,11 +52,9 @@
 		DA0375D823A8E15F000C3B5F /* Chapter01 */ = {
 			isa = PBXGroup;
 			children = (
-				DA0375D923A8E15F000C3B5F /* AppDelegate.swift */,
-				DA0375DB23A8E15F000C3B5F /* SceneDelegate.swift */,
+				890F40DB2B800980000ACE3E /* Chapter01App.swift */,
 				DA0375DD23A8E15F000C3B5F /* ContentView.swift */,
 				DA0375DF23A8E162000C3B5F /* Assets.xcassets */,
-				DA0375E423A8E162000C3B5F /* LaunchScreen.storyboard */,
 				DA0375E723A8E162000C3B5F /* Info.plist */,
 				DA0375E123A8E162000C3B5F /* Preview Content */,
 			);
@@ -101,8 +95,9 @@
 		DA0375CE23A8E15F000C3B5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Jayant Varma";
 				TargetAttributes = {
 					DA0375D523A8E15F000C3B5F = {
@@ -133,7 +128,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0375E623A8E162000C3B5F /* LaunchScreen.storyboard in Resources */,
 				DA0375E323A8E162000C3B5F /* Preview Assets.xcassets in Resources */,
 				DA0375E023A8E162000C3B5F /* Assets.xcassets in Resources */,
 			);
@@ -146,24 +140,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0375DA23A8E15F000C3B5F /* AppDelegate.swift in Sources */,
-				DA0375DC23A8E15F000C3B5F /* SceneDelegate.swift in Sources */,
+				890F40DC2B800980000ACE3E /* Chapter01App.swift in Sources */,
 				DA0375DE23A8E15F000C3B5F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA0375E423A8E162000C3B5F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA0375E523A8E162000C3B5F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA0375E823A8E162000C3B5F /* Debug */ = {
@@ -192,6 +174,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -202,6 +185,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -252,6 +236,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -262,6 +247,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -288,6 +274,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter01/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +294,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter01/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

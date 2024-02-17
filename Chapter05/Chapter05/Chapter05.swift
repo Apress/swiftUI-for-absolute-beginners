@@ -11,34 +11,33 @@ import SwiftUI
 
 // MARK: - Version 01
 struct Chapter05_01: View {
+    
     var body: some View {
         Text("Hello World!")
     }
 }
 
-struct Chapter05_01_Previews:  PreviewProvider {
-    static var previews: some View {
-        Chapter05_01()
-    }
+#Preview {
+    Chapter05_01()
 }
 
 // MARK: - Version 02
 struct Chapter05_02: View {
+    
     var body: some View {
         Text("Hello World!")
         .background(Color.red)
     }
 }
 
-struct Chapter05_02_Previews:  PreviewProvider {
-    static var previews: some View {
-        Chapter05_02()
-    }
+#Preview {
+    Chapter05_02()
 }
 
 
 // MARK: - Version 03
 struct Chapter05_03: View {
+    
     var body: some View {
         Text("Hello World!")
         .padding()
@@ -46,14 +45,13 @@ struct Chapter05_03: View {
     }
 }
 
-struct Chapter05_03_Previews:  PreviewProvider {
-    static var previews: some View {
-        Chapter05_03()
-    }
+#Preview {
+    Chapter05_03()
 }
 
 // MARK: - Version 04
 struct RainbowText: View {
+    
     private var radius: CGFloat = 25.0
     
     var body: some View {
@@ -79,15 +77,14 @@ struct RainbowText: View {
     }
 }
 
-struct RainbowText_Previews:  PreviewProvider {
-    static var previews: some View {
-        RainbowText()
-    }
+#Preview {
+    RainbowText()
 }
 
 
 // MARK: - Version 04
 struct ColoredCircles: View {
+    
     var body: some View {
         ZStack {
             Circle().fill(Color.green)
@@ -98,16 +95,15 @@ struct ColoredCircles: View {
     }
 }
 
-struct ColoredCircles_Previews: PreviewProvider {
-    static var previews: some View {
-        ColoredCircles()
-    }
+#Preview {
+    ColoredCircles()
 }
 
 
 // MARK: - Version 05
 
 struct UserNameControl: View {
+    
     var body: some View {
         HStack {
             Image(systemName: "person")
@@ -118,11 +114,8 @@ struct UserNameControl: View {
 }
 
 
-struct UserNameControl_Previews: PreviewProvider {
-    
-    static var previews: some View {
-        UserNameControl()
-    }
+#Preview {
+    UserNameControl()
 }
 
 

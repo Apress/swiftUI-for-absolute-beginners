@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CheckBox01: View {
+    
     @State private var selected: Bool = false
     var title: String = "untitled"
     
@@ -22,8 +23,6 @@ struct CheckBox01: View {
     }
 }
 
-struct CheckBox01_Previews: PreviewProvider {
-    static var previews: some View {
-        CheckBox01()
-    }
+#Preview {
+    CheckBox()
 }

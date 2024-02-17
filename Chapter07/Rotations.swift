@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Rotations: View {
+    
     @State private var angle = Angle.radians(0)
     
     var body: some View {
@@ -30,8 +31,6 @@ struct Rotations: View {
 }
 
 
-struct Rotations_Previews: PreviewProvider {
-    static var previews: some View {
-        Rotations()
-    }
+#Preview {
+    Rotations()
 }

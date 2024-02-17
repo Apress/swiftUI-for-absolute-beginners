@@ -3,16 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA03761E23A8EBBD000C3B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03761D23A8EBBD000C3B5F /* AppDelegate.swift */; };
-		DA03762023A8EBBD000C3B5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03761F23A8EBBD000C3B5F /* SceneDelegate.swift */; };
+		890F40E02B800F83000ACE3E /* Chapter05App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F40DF2B800F83000ACE3E /* Chapter05App.swift */; };
 		DA03762223A8EBBD000C3B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03762123A8EBBD000C3B5F /* ContentView.swift */; };
 		DA03762423A8EBBF000C3B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA03762323A8EBBF000C3B5F /* Assets.xcassets */; };
 		DA03762723A8EBBF000C3B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA03762623A8EBBF000C3B5F /* Preview Assets.xcassets */; };
-		DA03762A23A8EBBF000C3B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA03762823A8EBBF000C3B5F /* LaunchScreen.storyboard */; };
 		DA03763223A8EBE7000C3B5F /* Chapter05.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03763123A8EBE7000C3B5F /* Chapter05.swift */; };
 		DA03763423A8F0BB000C3B5F /* IconMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03763323A8F0BB000C3B5F /* IconMaker.swift */; };
 		DA03763623A8F240000C3B5F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03763523A8F240000C3B5F /* UserProfile.swift */; };
@@ -28,13 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890F40DF2B800F83000ACE3E /* Chapter05App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter05App.swift; sourceTree = "<group>"; };
 		DA03761A23A8EBBD000C3B5F /* Chapter05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter05.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA03761D23A8EBBD000C3B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA03761F23A8EBBD000C3B5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA03762123A8EBBD000C3B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA03762323A8EBBF000C3B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA03762623A8EBBF000C3B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA03762923A8EBBF000C3B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA03762B23A8EBBF000C3B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA03763123A8EBE7000C3B5F /* Chapter05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter05.swift; sourceTree = "<group>"; };
 		DA03763323A8F0BB000C3B5F /* IconMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconMaker.swift; sourceTree = "<group>"; };
@@ -80,11 +76,9 @@
 		DA03761C23A8EBBD000C3B5F /* Chapter05 */ = {
 			isa = PBXGroup;
 			children = (
-				DA03761D23A8EBBD000C3B5F /* AppDelegate.swift */,
-				DA03761F23A8EBBD000C3B5F /* SceneDelegate.swift */,
+				890F40DF2B800F83000ACE3E /* Chapter05App.swift */,
 				DA03762123A8EBBD000C3B5F /* ContentView.swift */,
 				DA03762323A8EBBF000C3B5F /* Assets.xcassets */,
-				DA03762823A8EBBF000C3B5F /* LaunchScreen.storyboard */,
 				DA03762B23A8EBBF000C3B5F /* Info.plist */,
 				DA03762523A8EBBF000C3B5F /* Preview Content */,
 				DA03763123A8EBE7000C3B5F /* Chapter05.swift */,
@@ -137,8 +131,9 @@
 		DA03761223A8EBBD000C3B5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Jayant Varma";
 				TargetAttributes = {
 					DA03761923A8EBBD000C3B5F = {
@@ -169,7 +164,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA03762A23A8EBBF000C3B5F /* LaunchScreen.storyboard in Resources */,
 				DA03762723A8EBBF000C3B5F /* Preview Assets.xcassets in Resources */,
 				DA03762423A8EBBF000C3B5F /* Assets.xcassets in Resources */,
 			);
@@ -182,18 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890F40E02B800F83000ACE3E /* Chapter05App.swift in Sources */,
 				DA03764423A9028E000C3B5F /* Cheesecake02.swift in Sources */,
 				DA03763A23A8F538000C3B5F /* CheckBox.swift in Sources */,
 				DA03763423A8F0BB000C3B5F /* IconMaker.swift in Sources */,
 				DA03763823A8F3A3000C3B5F /* GradientCircle.swift in Sources */,
 				DA762CA923A90919004E25EF /* Geometry.swift in Sources */,
 				DA03763E23A8F658000C3B5F /* Todos.swift in Sources */,
-				DA03761E23A8EBBD000C3B5F /* AppDelegate.swift in Sources */,
 				DA03764823A904A4000C3B5F /* ThumbnailCard.swift in Sources */,
 				DA03764023A8F83B000C3B5F /* Thumbnail.swift in Sources */,
 				DA03764623A90421000C3B5F /* Thumb.swift in Sources */,
 				DA03763623A8F240000C3B5F /* UserProfile.swift in Sources */,
-				DA03762023A8EBBD000C3B5F /* SceneDelegate.swift in Sources */,
 				DA03763C23A8F5B2000C3B5F /* CheckBox01.swift in Sources */,
 				DA03763223A8EBE7000C3B5F /* Chapter05.swift in Sources */,
 				DA03762223A8EBBD000C3B5F /* ContentView.swift in Sources */,
@@ -201,17 +194,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA03762823A8EBBF000C3B5F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA03762923A8EBBF000C3B5F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA03762C23A8EBBF000C3B5F /* Debug */ = {
@@ -240,6 +222,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -250,6 +233,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -300,6 +284,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -310,6 +295,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -336,6 +322,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter05/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter05/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,6 +342,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter05/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter05/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -3,16 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA51534223AB8BDD000BBEC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51534123AB8BDD000BBEC7 /* AppDelegate.swift */; };
-		DA51534423AB8BDD000BBEC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51534323AB8BDD000BBEC7 /* SceneDelegate.swift */; };
+		890F40E42B8118EA000ACE3E /* Chapter07App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F40E32B8118EA000ACE3E /* Chapter07App.swift */; };
 		DA51534623AB8BDD000BBEC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51534523AB8BDD000BBEC7 /* ContentView.swift */; };
 		DA51534823AB8BE1000BBEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA51534723AB8BE1000BBEC7 /* Assets.xcassets */; };
 		DA51534B23AB8BE1000BBEC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA51534A23AB8BE1000BBEC7 /* Preview Assets.xcassets */; };
-		DA51534E23AB8BE1000BBEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA51534C23AB8BE1000BBEC7 /* LaunchScreen.storyboard */; };
 		DA51535623AB8C31000BBEC7 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51535523AB8C31000BBEC7 /* Gestures.swift */; };
 		DA51535823AB8DE6000BBEC7 /* DragPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51535723AB8DE6000BBEC7 /* DragPlane.swift */; };
 		DA51535A23AB9225000BBEC7 /* Rotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51535923AB9225000BBEC7 /* Rotations.swift */; };
@@ -20,13 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890F40E32B8118EA000ACE3E /* Chapter07App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter07App.swift; sourceTree = "<group>"; };
 		DA51533E23AB8BDD000BBEC7 /* Chapter07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter07.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA51534123AB8BDD000BBEC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA51534323AB8BDD000BBEC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA51534523AB8BDD000BBEC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA51534723AB8BE1000BBEC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA51534A23AB8BE1000BBEC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA51534D23AB8BE1000BBEC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA51534F23AB8BE1000BBEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA51535523AB8C31000BBEC7 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		DA51535723AB8DE6000BBEC7 /* DragPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragPlane.swift; sourceTree = "<group>"; };
@@ -68,11 +64,9 @@
 		DA51534023AB8BDD000BBEC7 /* Chapter07 */ = {
 			isa = PBXGroup;
 			children = (
-				DA51534123AB8BDD000BBEC7 /* AppDelegate.swift */,
-				DA51534323AB8BDD000BBEC7 /* SceneDelegate.swift */,
+				890F40E32B8118EA000ACE3E /* Chapter07App.swift */,
 				DA51534523AB8BDD000BBEC7 /* ContentView.swift */,
 				DA51534723AB8BE1000BBEC7 /* Assets.xcassets */,
-				DA51534C23AB8BE1000BBEC7 /* LaunchScreen.storyboard */,
 				DA51534F23AB8BE1000BBEC7 /* Info.plist */,
 				DA51534923AB8BE1000BBEC7 /* Preview Content */,
 			);
@@ -113,8 +107,9 @@
 		DA51533623AB8BDD000BBEC7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Jayant Varma";
 				TargetAttributes = {
 					DA51533D23AB8BDD000BBEC7 = {
@@ -145,7 +140,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA51534E23AB8BE1000BBEC7 /* LaunchScreen.storyboard in Resources */,
 				DA51534B23AB8BE1000BBEC7 /* Preview Assets.xcassets in Resources */,
 				DA51534823AB8BE1000BBEC7 /* Assets.xcassets in Resources */,
 			);
@@ -158,9 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				890F40E42B8118EA000ACE3E /* Chapter07App.swift in Sources */,
 				DA51535C23AB9376000BBEC7 /* MagnifyView.swift in Sources */,
-				DA51534223AB8BDD000BBEC7 /* AppDelegate.swift in Sources */,
-				DA51534423AB8BDD000BBEC7 /* SceneDelegate.swift in Sources */,
 				DA51535823AB8DE6000BBEC7 /* DragPlane.swift in Sources */,
 				DA51535623AB8C31000BBEC7 /* Gestures.swift in Sources */,
 				DA51534623AB8BDD000BBEC7 /* ContentView.swift in Sources */,
@@ -169,17 +162,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA51534C23AB8BE1000BBEC7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA51534D23AB8BE1000BBEC7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA51535023AB8BE2000BBEC7 /* Debug */ = {
@@ -208,6 +190,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -218,6 +201,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -268,6 +252,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -278,6 +263,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -304,6 +290,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter07/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter07/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +310,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter07/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter07/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
