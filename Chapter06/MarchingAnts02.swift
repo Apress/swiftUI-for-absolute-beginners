@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ZoomTextOnce: View {
+    
     @State private var startAnimation = false
     @State private var changeValue:CGFloat = 0.0
     
@@ -23,9 +24,7 @@ struct ZoomTextOnce: View {
     }
 }
 
-struct ZoomTextOnce_Previews: PreviewProvider {
-    static var previews: some View {
-        ZoomTextOnce()
-    }
+#Preview {
+    ZoomTextOnce()
 }
 

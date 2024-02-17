@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ThumbnailBasicView: View {
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Just Desserts")
@@ -22,12 +23,10 @@ struct ThumbnailBasicView: View {
                     }
                 }.padding()
             }
+        }
     }
-}
 }
 
-struct ThumbnailBasicView_Previews: PreviewProvider {
-    static var previews: some View {
-        ThumbnailBasicView()
-    }
+#Preview {
+    ThumbnailBasicView()
 }

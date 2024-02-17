@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct Gestures: View {
+    
     @State private var text = "hello"
+    
     var body: some View {
         Text("\(text)")
         
@@ -30,13 +32,10 @@ struct Gestures: View {
             DragGesture(minimumDistance: 60)
             .onEnded{ drag in
             self.text = String(describing: drag)
-        }
-    )
+        })
     }
 }
 
-struct Gestures_Previews: PreviewProvider {
-    static var previews: some View {
-        Gestures()
-    }
+#Preview {
+    Gestures()
 }

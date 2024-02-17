@@ -3,25 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890F40E22B810FFE000ACE3E /* Chapter06App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F40E12B810FFE000ACE3E /* Chapter06App.swift */; };
 		DA51532A23AB84DD000BBEC7 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51532923AB84DD000BBEC7 /* TimerView.swift */; };
 		DA51532C23AB859F000BBEC7 /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51532B23AB859F000BBEC7 /* AnimatedView.swift */; };
 		DA51532E23AB8855000BBEC7 /* Jiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51532D23AB8855000BBEC7 /* Jiggle.swift */; };
 		DA51533023AB8905000BBEC7 /* MarchingAnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51532F23AB8905000BBEC7 /* MarchingAnts.swift */; };
 		DA51533223AB8A0E000BBEC7 /* MarchingAnts02.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51533123AB8A0E000BBEC7 /* MarchingAnts02.swift */; };
 		DA51533423AB8B3B000BBEC7 /* PathGraphic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA51533323AB8B3B000BBEC7 /* PathGraphic.swift */; };
-		DA762CB723A90A5E004E25EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA762CB623A90A5E004E25EF /* AppDelegate.swift */; };
-		DA762CB923A90A5E004E25EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA762CB823A90A5E004E25EF /* SceneDelegate.swift */; };
 		DA762CBB23A90A5E004E25EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA762CBA23A90A5E004E25EF /* ContentView.swift */; };
 		DA762CBD23A90A62004E25EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA762CBC23A90A62004E25EF /* Assets.xcassets */; };
 		DA762CC023A90A62004E25EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA762CBF23A90A62004E25EF /* Preview Assets.xcassets */; };
-		DA762CC323A90A62004E25EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA762CC123A90A62004E25EF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890F40E12B810FFE000ACE3E /* Chapter06App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter06App.swift; sourceTree = "<group>"; };
 		DA51532923AB84DD000BBEC7 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		DA51532B23AB859F000BBEC7 /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
 		DA51532D23AB8855000BBEC7 /* Jiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jiggle.swift; sourceTree = "<group>"; };
@@ -29,12 +28,9 @@
 		DA51533123AB8A0E000BBEC7 /* MarchingAnts02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarchingAnts02.swift; sourceTree = "<group>"; };
 		DA51533323AB8B3B000BBEC7 /* PathGraphic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathGraphic.swift; sourceTree = "<group>"; };
 		DA762CB323A90A5E004E25EF /* Chapter06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter06.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA762CB623A90A5E004E25EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA762CB823A90A5E004E25EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA762CBA23A90A5E004E25EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA762CBC23A90A62004E25EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA762CBF23A90A62004E25EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA762CC223A90A62004E25EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA762CC423A90A62004E25EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,11 +70,9 @@
 		DA762CB523A90A5E004E25EF /* Chapter06 */ = {
 			isa = PBXGroup;
 			children = (
-				DA762CB623A90A5E004E25EF /* AppDelegate.swift */,
-				DA762CB823A90A5E004E25EF /* SceneDelegate.swift */,
+				890F40E12B810FFE000ACE3E /* Chapter06App.swift */,
 				DA762CBA23A90A5E004E25EF /* ContentView.swift */,
 				DA762CBC23A90A62004E25EF /* Assets.xcassets */,
-				DA762CC123A90A62004E25EF /* LaunchScreen.storyboard */,
 				DA762CC423A90A62004E25EF /* Info.plist */,
 				DA762CBE23A90A62004E25EF /* Preview Content */,
 			);
@@ -119,8 +113,9 @@
 		DA762CAB23A90A5E004E25EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Jayant Varma";
 				TargetAttributes = {
 					DA762CB223A90A5E004E25EF = {
@@ -151,7 +146,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA762CC323A90A62004E25EF /* LaunchScreen.storyboard in Resources */,
 				DA762CC023A90A62004E25EF /* Preview Assets.xcassets in Resources */,
 				DA762CBD23A90A62004E25EF /* Assets.xcassets in Resources */,
 			);
@@ -166,9 +160,8 @@
 			files = (
 				DA51533223AB8A0E000BBEC7 /* MarchingAnts02.swift in Sources */,
 				DA51533423AB8B3B000BBEC7 /* PathGraphic.swift in Sources */,
-				DA762CB723A90A5E004E25EF /* AppDelegate.swift in Sources */,
 				DA51533023AB8905000BBEC7 /* MarchingAnts.swift in Sources */,
-				DA762CB923A90A5E004E25EF /* SceneDelegate.swift in Sources */,
+				890F40E22B810FFE000ACE3E /* Chapter06App.swift in Sources */,
 				DA51532C23AB859F000BBEC7 /* AnimatedView.swift in Sources */,
 				DA51532E23AB8855000BBEC7 /* Jiggle.swift in Sources */,
 				DA51532A23AB84DD000BBEC7 /* TimerView.swift in Sources */,
@@ -177,17 +170,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA762CC123A90A62004E25EF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA762CC223A90A62004E25EF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA762CC523A90A62004E25EF /* Debug */ = {
@@ -216,6 +198,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -226,6 +209,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -276,6 +260,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -286,6 +271,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -312,6 +298,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter06/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter06/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,6 +318,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter06/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter06/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

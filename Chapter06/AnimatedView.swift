@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct AnimatedView: View {
+    
     @State private var flipFlop = false
+    
     let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
     
     var body: some View {
@@ -20,15 +22,16 @@ struct AnimatedView: View {
             Circle().fill(Color.red).scaleEffect(0.4)
         }.scaleEffect(flipFlop ? 0.2 : 0.8)
             .opacity(flipFlop ? 0.1 : 1.0)
-            .animation(Animation.spring().repeatForever(autoreverses: true))
+            .animation(
+                .spring()
+                .repeatForever(autoreverses: true),
+                value: flipFlop)
             .onReceive(timer){ _ in
                 self.flipFlop.toggle()
         }
     }
 }
 
-struct AnimatedView_Previews: PreviewProvider {
-    static var previews: some View {
-        AnimatedView()
-    }
+#Preview {
+    AnimatedView()
 }

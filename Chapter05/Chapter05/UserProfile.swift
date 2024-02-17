@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct UserProfile: View {
+    
     var body: some View {
         VStack {
             Image("user")
@@ -29,8 +30,6 @@ struct UserProfile: View {
     }
 }
     
-    struct UserProfile_Previews: PreviewProvider {
-        static var previews: some View {
-            UserProfile()
-        }
+#Preview {
+    UserProfile()
 }

@@ -200,9 +200,8 @@ struct AnotherView: View {
 }
 
 
-struct AnotherView_Previews: PreviewProvider {
-    static var previews: some View {
-        let store = BookingStore01()
-        return AnotherView().environmentObject(store)
-    }
+#Preview {
+    
+    let store = BookingStore01()
+    return AnotherView().environmentObject(store)
 }

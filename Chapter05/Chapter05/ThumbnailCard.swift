@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct ThumbnailCard: View {
+    
     var thumb: Thumb
+    
     var body: some View {
         ZStack(alignment: .bottomLeading) {
             Image(thumb.image)
@@ -31,7 +33,9 @@ struct ThumbnailCard: View {
 }
 
 struct ThumbnailView: View {
+    
     var body: some View {
+        
         VStack {
             Text("Just Desserts")
                 .font(.largeTitle)
@@ -39,7 +43,7 @@ struct ThumbnailView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack {
-                    ForEach(0..<thumbnailData.count){ index in
+                    ForEach(0..<thumbnailData.count, id: \.self){ index in
                         ThumbnailCard(thumb: thumbnailData[index])
                     }
                 }.padding()
@@ -50,8 +54,6 @@ struct ThumbnailView: View {
     
 }
 
-struct ThumbnailCard_Previews: PreviewProvider {
-    static var previews: some View {
-        ThumbnailView()
-    }
+#Preview {
+    ThumbnailView()
 }

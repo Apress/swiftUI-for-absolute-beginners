@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct IconMaker: View {
+    
     var body: some View {
         Image(systemName: "cloud.sun.bolt.fill")
         .resizable()
@@ -24,8 +25,6 @@ struct IconMaker: View {
     }
 }
 
-struct IconMaker_Previews: PreviewProvider {
-    static var previews: some View {
-        IconMaker()
-    }
+#Preview {
+    IconMaker()
 }

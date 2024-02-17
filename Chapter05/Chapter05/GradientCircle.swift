@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct GradientCircle: View {
+    
     var body: some View {
         VStack {
             Image("user")
@@ -30,8 +31,6 @@ struct GradientCircle: View {
     }
 }
     
-    struct GradientCircle_Previews: PreviewProvider {
-        static var previews: some View {
-            GradientCircle()
-        }
+#Preview {
+    GradientCircle()
 }

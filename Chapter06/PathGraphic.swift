@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct PathGraphic: View {
+    
     var body: some View {
         Path { path in
             path.move(to: CGPoint(x: 10, y: 10))
@@ -19,8 +20,6 @@ struct PathGraphic: View {
     }
 }
 
-struct PathGraphic_Previews: PreviewProvider {
-    static var previews: some View {
-        PathGraphic()
-    }
+#Preview {
+    PathGraphic()
 }

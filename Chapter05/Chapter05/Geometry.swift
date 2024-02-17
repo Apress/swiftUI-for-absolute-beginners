@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Geometry: View {
+    
     var body: some View {
         
         ScrollView(.horizontal, showsIndicators: false) {
@@ -29,8 +30,6 @@ struct Geometry: View {
     }
 }
             
-struct Geometry_Previews: PreviewProvider {
-    static var previews: some View {
-        Geometry()
-    }
+#Preview {
+    Geometry()
 }

@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct TimerView: View {
+    
     @State private var counter = 0
+    
     let timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+    
     var body: some View {
         Text("Counter Ticks: \(counter)")
             .onReceive(timer){ _ in
@@ -19,8 +22,6 @@ struct TimerView: View {
     }
 }
 
-struct TimerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView()
-    }
+#Preview {
+    TimerView()
 }

@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct DragPlane: View {
+    
     @State private var position: CGPoint = .zero
+    @State private var animationValue: CGFloat = 4
     
     var body: some View {
         ZStack {
@@ -18,7 +20,7 @@ struct DragPlane: View {
                 .frame(width: 320, height: 320)
             Image(systemName: "paperplane") .font(.largeTitle) .foregroundColor(Color.blue.opacity(0.5))
                 .offset(x: self.position.x, y: self.position.y)
-                .animation(Animation.spring())
+                .animation(.spring(), value: animationValue)
                 .gesture(
                     DragGesture()
                         .onChanged { self.position = $0.location }
@@ -33,8 +35,6 @@ struct DragPlane: View {
     }
 }
 
-struct DragPlane_Previews: PreviewProvider {
-    static var previews: some View {
-        DragPlane()
-    }
+#Preview {
+    DragPlane()
 }

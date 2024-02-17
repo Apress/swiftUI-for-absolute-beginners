@@ -3,27 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA0375FA23A8E3B5000C3B5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0375F923A8E3B5000C3B5F /* AppDelegate.swift */; };
-		DA0375FC23A8E3B5000C3B5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0375FB23A8E3B5000C3B5F /* SceneDelegate.swift */; };
+		890F40DE2B800C6A000ACE3E /* Chapter04App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F40DD2B800C6A000ACE3E /* Chapter04App.swift */; };
 		DA0375FE23A8E3B5000C3B5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0375FD23A8E3B5000C3B5F /* ContentView.swift */; };
 		DA03760023A8E3B7000C3B5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0375FF23A8E3B7000C3B5F /* Assets.xcassets */; };
 		DA03760323A8E3B7000C3B5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA03760223A8E3B7000C3B5F /* Preview Assets.xcassets */; };
-		DA03760623A8E3B7000C3B5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA03760423A8E3B7000C3B5F /* LaunchScreen.storyboard */; };
 		DA03761023A8E452000C3B5F /* Seat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA03760F23A8E452000C3B5F /* Seat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890F40DD2B800C6A000ACE3E /* Chapter04App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter04App.swift; sourceTree = "<group>"; };
 		DA0375F623A8E3B5000C3B5F /* Chapter04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter04.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA0375F923A8E3B5000C3B5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA0375FB23A8E3B5000C3B5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA0375FD23A8E3B5000C3B5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA0375FF23A8E3B7000C3B5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA03760223A8E3B7000C3B5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DA03760523A8E3B7000C3B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA03760723A8E3B7000C3B5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA03760F23A8E452000C3B5F /* Seat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,14 +54,12 @@
 		DA0375F823A8E3B5000C3B5F /* Chapter04 */ = {
 			isa = PBXGroup;
 			children = (
-				DA0375F923A8E3B5000C3B5F /* AppDelegate.swift */,
-				DA0375FB23A8E3B5000C3B5F /* SceneDelegate.swift */,
 				DA0375FD23A8E3B5000C3B5F /* ContentView.swift */,
+				DA03760F23A8E452000C3B5F /* Seat.swift */,
 				DA0375FF23A8E3B7000C3B5F /* Assets.xcassets */,
-				DA03760423A8E3B7000C3B5F /* LaunchScreen.storyboard */,
 				DA03760723A8E3B7000C3B5F /* Info.plist */,
 				DA03760123A8E3B7000C3B5F /* Preview Content */,
-				DA03760F23A8E452000C3B5F /* Seat.swift */,
+				890F40DD2B800C6A000ACE3E /* Chapter04App.swift */,
 			);
 			path = Chapter04;
 			sourceTree = "<group>";
@@ -104,8 +98,9 @@
 		DA0375EE23A8E3B5000C3B5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Jayant Varma";
 				TargetAttributes = {
 					DA0375F523A8E3B5000C3B5F = {
@@ -136,7 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA03760623A8E3B7000C3B5F /* LaunchScreen.storyboard in Resources */,
 				DA03760323A8E3B7000C3B5F /* Preview Assets.xcassets in Resources */,
 				DA03760023A8E3B7000C3B5F /* Assets.xcassets in Resources */,
 			);
@@ -149,25 +143,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0375FA23A8E3B5000C3B5F /* AppDelegate.swift in Sources */,
-				DA0375FC23A8E3B5000C3B5F /* SceneDelegate.swift in Sources */,
+				890F40DE2B800C6A000ACE3E /* Chapter04App.swift in Sources */,
 				DA03761023A8E452000C3B5F /* Seat.swift in Sources */,
 				DA0375FE23A8E3B5000C3B5F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DA03760423A8E3B7000C3B5F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA03760523A8E3B7000C3B5F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DA03760823A8E3B7000C3B5F /* Debug */ = {
@@ -196,6 +178,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -206,6 +189,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -256,6 +240,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -266,6 +251,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -292,6 +278,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter04/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter04/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +298,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Chapter04/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Chapter04/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

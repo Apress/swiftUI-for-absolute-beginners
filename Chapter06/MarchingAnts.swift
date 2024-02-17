@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct MarchingAnts: View {
+    
     @State private var startAnimation = false
     
     var body: some View {
@@ -19,19 +20,18 @@ struct MarchingAnts: View {
                 lineJoin: .round,
                 dash: [10, 10],
                 dashPhase: startAnimation ? 0 : 40
-            )).frame(width: 300, height: 300)
+            ))
+            .frame(width: 300, height: 300)
             .animation(
-                Animation.linear(duration: 1.0)
-                .repeatForever(autoreverses: false)
-                .speed(4)
-        ).onAppear(){
-            self.startAnimation.toggle()
-        }
+                .linear(duration: 1.0)
+                .repeatForever(autoreverses: false),
+                value: startAnimation)
+            .onAppear {
+                self.startAnimation.toggle()
+            }
     }
 }
 
-struct MarchingAnts_Previews: PreviewProvider {
-    static var previews: some View {
-        MarchingAnts()
-    }
+#Preview {
+    MarchingAnts()
 }
